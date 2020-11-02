@@ -31,6 +31,7 @@ public class TimesheetApplication {
 		FilterRegistrationBean rwFilter = new FilterRegistrationBean(new RewriteFilter());
 		rwFilter.setDispatcherTypes(EnumSet.of(DispatcherType.FORWARD, DispatcherType.REQUEST, DispatcherType.ASYNC, DispatcherType.ERROR));
 		rwFilter.addUrlPatterns("/*");
+//**
 		return rwFilter;
 	}
 
