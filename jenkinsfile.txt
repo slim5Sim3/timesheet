@@ -20,7 +20,7 @@ pipeline {
             steps {
                 script {
                     // Let's clone the source
-                    git 'https://github.com/Firasbensalah/CITime.git';
+                    git 'https://github.com/youssefabid/timesheet.git';
                 }
             }
         }
@@ -86,8 +86,8 @@ pipeline {
 
         stage("mail") {
           steps {
-          mail bcc: '', body: '''BUILD SUCCESS.
--Jenkins.''', cc: '', from: '', replyTo: '', subject: 'Build successful', to: 'firas.bensalah@esprit.tn'
+          mail bcc: '', body: '''BUILD DONE.
+-Jenkins.''', cc: '', from: '', replyTo: '', subject: 'Build done', to: 'youssef.abid@esprit.tn'
           }
         
        }
